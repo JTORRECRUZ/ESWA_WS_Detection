@@ -1,1 +1,2 @@
-# 
+Description:
+We propose a novel wheezing sound detection approach combining a recursive orthogonal non-negative matrix factorization (ONMF) and the Gini index spectral sparsity. This recursive approach is composed of four stages. The first stage is based on the ONMF model to factorize the spectral bases as dissimilar as possible. The second stage attempts to cluster the ONMF spectral bases into two categories: wheezing and normal breath. The third stage defines the stop criterion of the recursive method that avoids the loss of wheezing spectral content. Finally, the fourth stage determines the patient's condition in order to locate the temporal intervals in which wheeze sounds are active for unhealthy patients.
