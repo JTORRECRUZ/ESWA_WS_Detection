@@ -146,7 +146,6 @@ else
      Xi= smooth(Xmax, 3)./(max(max(smooth(Xmax,3))));
      delta_t = Xi >= Zd;                  %UnHealthy patient
      disp(' Unhealthy patient');
-end
 %=========================================================================================================================================%
 %                                    Figure
 % subplot(311);imagesc((0:Lx-1)/fs,(0:nf-1)*(fs/2)/size(Xn,1),X/norm);xlabel('Time(s)');ylabel('Frequency(Hz)');colormap(flipud(gray));
@@ -154,5 +153,5 @@ end
 % subplot(313);plot((0:Lx/nt:Lx-1)/fs,Xi,'k');hold on; plot((0:Lx/nt:Lx-1)/fs,delta_t,'r');hold on;plot((0:Lx/nt:Lx-1)/fs,(Xi>0)*Zd,'--k');
 % legend({'$\xi(t)$','$\delta(t)$','$\zeta_{d}$'},'Interpreter','latex');
 %=========================================================================================================================================%
-
+end
 
