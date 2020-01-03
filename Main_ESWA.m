@@ -33,7 +33,7 @@ Mi = 120;           % Number of ONMF iterations
 nfft = 2*N;         % Points of the discrete fourier transform (DFT)
 rho = 0.1;          % Threshold Zs
 Zh = 0.5;           % Threshold Zh (Healthy/Unhealthy)
-Zd = 0.01;          % Threshold Zd (Wheezing detection)
+Zd = 0.05;          % Threshold Zd (Wheezing detection)
 stop = 0;           % Stop criterion initialization
 Ri = 0;             % Recursive iteration initialization
 %--------------------------------------------------------------------------
