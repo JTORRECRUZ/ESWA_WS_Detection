@@ -1,4 +1,4 @@
-function [W,H,errs,vout] = onmf(V, r, varargin)
+function [W,H,errs,vout] = nmf_kl_loc(V, r, varargin)
 % function [W,H,errs,vout] = nmf_kl_loc(V, r, varargin)
 %
 % Implements NMF using the normalized Kullback-Leibler divergence (see [1]
