@@ -138,6 +138,10 @@ beta_e = ((nf+1)/nt)-((2*sum(((nf:-1:1).*sort(En'))))/(nf*sum(sort(En))));
 if beta_e < Zh 
      delta_t = zeros(1,nt);                    %Healthy 
      disp(' Healthy patient');
+%=========================================================================================================================================%
+%                                    Figure
+imagesc((0:Lx-1)/fs,(0:nf-1)*(fs/2)/size(Xn,1),Xn);xlabel('Time(s)');ylabel('Frequency(Hz)');colormap(flipud(gray));
+%=========================================================================================================================================%
 else
    % Calculate prominent estimated wheezing spectrogram Xwp
      Xwp = Xwo.^2;
@@ -148,10 +152,10 @@ else
      disp(' Unhealthy patient');
 %=========================================================================================================================================%
 %                                    Figure
-% subplot(311);imagesc((0:Lx-1)/fs,(0:nf-1)*(fs/2)/size(Xn,1),X/norm);xlabel('Time(s)');ylabel('Frequency(Hz)');colormap(flipud(gray));
-% subplot(312);imagesc((0:Lx-1)/fs,(0:nf-1)*(fs/2)/size(Xn,1),Xwo);xlabel('Time(s)');ylabel('Frequency(Hz)');colormap(flipud(gray));
-% subplot(313);plot((0:Lx/nt:Lx-1)/fs,Xi,'k');hold on; plot((0:Lx/nt:Lx-1)/fs,delta_t,'r');hold on;plot((0:Lx/nt:Lx-1)/fs,(Xi>0)*Zd,'--k');
-% legend({'$\xi(t)$','$\delta(t)$','$\zeta_{d}$'},'Interpreter','latex');
+subplot(311);imagesc((0:Lx-1)/fs,(0:nf-1)*(fs/2)/size(Xn,1),X/norm);xlabel('Time(s)');ylabel('Frequency(Hz)');colormap(flipud(gray));
+subplot(312);imagesc((0:Lx-1)/fs,(0:nf-1)*(fs/2)/size(Xn,1),Xwo);xlabel('Time(s)');ylabel('Frequency(Hz)');colormap(flipud(gray));
+subplot(313);plot((0:Lx/nt:Lx-1)/fs,Xi,'k');hold on; plot((0:Lx/nt:Lx-1)/fs,delta_t,'r');hold on;plot((0:Lx/nt:Lx-1)/fs,(Xi>0)*Zd,'--k');
+legend({'$\xi(t)$','$\delta(t)$','$\zeta_{d}$'},'Interpreter','latex');
 %=========================================================================================================================================%
 end
 
