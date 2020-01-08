@@ -74,7 +74,7 @@ Xn = X/norm;
 while stop==0 
 Ri = Ri + 1;          % recursive iteration
 % Orthogonal non-negative matrix factorization (ONMF)
-[B,A] = onmf(Xn, K);
+[B,A] = nmf_kl_loc(Xn, K);
 % B-->  Basis matrix
 % A-->  Activation matrix
 %--------------------------------------------------------------------------
