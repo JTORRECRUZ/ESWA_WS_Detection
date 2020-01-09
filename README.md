@@ -5,4 +5,4 @@ Note that in the case of a healthy patient, the algorithm returns a message with
 
 The main file to be run has been denoted as "Main_ESWA.m".
 The function denoted as "sg.m" allows to obtain the spectrogram of a signal and has been obtained directly from the following link "https://github.com/bagustris/thesis-bss". 
-The function denoted as "nmf_no" allows to obtain the basis and activation matrix of the orthogonal non-negative matrix factorization approach and has been obtained directly from the following link "https://github.com/iwonasob/nmflib/blob/master/nmf_kl_loc.m".
+The function denoted as "nmf_kl_loc" allows to obtain the basis and activation matrix of the orthogonal non-negative matrix factorization approach and has been obtained directly from the following link "https://github.com/iwonasob/nmflib/blob/master/nmf_kl_loc.m".
