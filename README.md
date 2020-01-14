@@ -3,6 +3,4 @@ This work presents an expert and intelligent system to detect wheeze sounds base
 
 Note that in the case of a healthy patient, the algorithm returns a message with the following information "healthy patient" and a spectrogram to visualize the signal in the time-frequency domain. However, in the case of an unhealthy patient the algorithm returns a message with the following information 'unhealthy patient' and a figure divided into three subfigures: (i) the figure at the top shows the spectrogram of the original signal; (ii) the figure in the middle shows the estimated wheezing spectrogram in the optimal recursive iteration; and (iii) the figure at the bottom shows the time intervals in which the wheezing is active. 
 
-The main file to be run has been denoted as "Main_ESWA.m".
-The function denoted as "sg.m" allows to obtain the spectrogram of a signal and has been obtained directly from the following link "https://github.com/bagustris/thesis-bss". 
-The function denoted as "nmf_kl_loc" allows to obtain the basis and activation matrix of the orthogonal non-negative matrix factorization approach and has been obtained directly from the following link "https://github.com/iwonasob/nmflib/blob/master/nmf_kl_loc.m".
+The main file to be run has been denoted as "Main_ESWA.m". The function denoted as "sg.m" computes the spectrogram of the input mixture. The function denoted as "nmf_kl_loc" allows to obtain the basis and activation matrix of the orthogonal non-negative matrix factorization approach.
